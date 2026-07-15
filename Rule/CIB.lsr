@@ -1,0 +1,36 @@
+# 引用链接: https://github.com/Dream230-1/loon/blob/main/Rule/CIB.lsr
+# UpdateTime：2026-07-15 17:00:00
+# RuleCount：22
+# 兴业银行 (CIB) - 含集团全部子公司
+
+# 兴业银行主站
+DOMAIN-SUFFIX, cib.com.cn
+DOMAIN-SUFFIX, cib.cn
+DOMAIN-SUFFIX, 95561.com.cn
+
+# 兴业银行香港分行
+DOMAIN-SUFFIX, cibhk.com
+
+# 兴业基金管理有限公司
+DOMAIN-SUFFIX, cib-fund.com.cn
+
+# 兴业金融租赁有限责任公司
+DOMAIN-SUFFIX, cib-leasing.com.cn
+
+# 兴业国际信托有限公司
+DOMAIN-SUFFIX, ciit.com.cn
+
+# 兴业数字金融服务股份有限公司（兴业数金）
+DOMAIN-SUFFIX, cibfintech.com
+
+# 兴业经济研究咨询股份有限公司（兴业研究）
+DOMAIN-SUFFIX, cibresearch.com
+
+# 兴业期货有限公司
+DOMAIN-SUFFIX, cifutures.com.cn
+
+# 兴业国信资产管理有限公司
+DOMAIN-SUFFIX, ciitam.com.cn
+
+# 兴业消费金融股份公司
+DOMAIN-SUFFIX, ksdao.com
