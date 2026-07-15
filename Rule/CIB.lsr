@@ -1,36 +1,78 @@
 # 引用链接: https://raw.githubusercontent.com/Dream230-1/loon/main/Rule/CIB.lsr
-# UpdateTime：2026-07-15 17:00:00
-# RuleCount：22
-# 兴业银行 (CIB) - 含集团全部子公司
+# UpdateTime：2026-07-15 19:10:00
+# RuleCount：55
+# 兴业银行 / 兴业生活 DIRECT 防代理检测加强版
+# 说明：本规则包含兴业自有域名、兴业生活依赖、银联支付、验证码/风控、推送、地图、统计/崩溃上报、证书校验等常见依赖。
+# 注意：若 App 仍提示“网络代理环境”，请同时将下列兴业域名加入 Loon 的 Fake-IP 排除 / DNS 真实解析，并关闭相关 MITM/重写。
 
-# 兴业银行主站
+# 兴业银行主站与 App 入口
 DOMAIN-SUFFIX, cib.com.cn
 DOMAIN-SUFFIX, cib.cn
 DOMAIN-SUFFIX, 95561.com.cn
+DOMAIN-SUFFIX, static-ucp.com.cn
+DOMAIN-SUFFIX, cdn20.com
 
 # 兴业银行香港分行
 DOMAIN-SUFFIX, cibhk.com
 
-# 兴业基金管理有限公司
+# 兴业集团子公司 / 兴业生活相关
 DOMAIN-SUFFIX, cib-fund.com.cn
-
-# 兴业金融租赁有限责任公司
 DOMAIN-SUFFIX, cib-leasing.com.cn
-
-# 兴业国际信托有限公司
 DOMAIN-SUFFIX, ciit.com.cn
-
-# 兴业数字金融服务股份有限公司（兴业数金）
 DOMAIN-SUFFIX, cibfintech.com
-
-# 兴业经济研究咨询股份有限公司（兴业研究）
 DOMAIN-SUFFIX, cibresearch.com
-
-# 兴业期货有限公司
 DOMAIN-SUFFIX, cifutures.com.cn
-
-# 兴业国信资产管理有限公司
 DOMAIN-SUFFIX, ciitam.com.cn
-
-# 兴业消费金融股份公司
 DOMAIN-SUFFIX, ksdao.com
+
+# 银联 / 支付通道
+DOMAIN-SUFFIX, 95516.com
+DOMAIN-SUFFIX, 95516.net
+DOMAIN-SUFFIX, unionpay.com
+DOMAIN-SUFFIX, unionpayintl.com
+DOMAIN-SUFFIX, chinaunionpay.com
+DOMAIN-SUFFIX, chinaums.com
+DOMAIN-SUFFIX, chinaums.com.cn
+DOMAIN-SUFFIX, ums86.com
+
+# 验证码 / 风控 / 阿里云安全
+DOMAIN-SUFFIX, geetest.com
+DOMAIN-SUFFIX, geevisit.com
+DOMAIN-SUFFIX, aliyuncs.com
+DOMAIN-SUFFIX, aliyun.com
+DOMAIN-SUFFIX, alicdn.com
+DOMAIN-SUFFIX, aliyundunwaf.com
+DOMAIN-SUFFIX, mmstat.com
+
+# 推送 SDK
+DOMAIN-SUFFIX, jpush.cn
+DOMAIN-SUFFIX, jpush.io
+DOMAIN-SUFFIX, jiguang.cn
+DOMAIN-SUFFIX, getui.com
+DOMAIN-SUFFIX, igexin.com
+
+# 地图 / 定位
+DOMAIN-SUFFIX, amap.com
+DOMAIN-SUFFIX, amapapi.com
+DOMAIN-SUFFIX, autonavi.com
+DOMAIN-SUFFIX, baidu.com
+DOMAIN-SUFFIX, bdstatic.com
+DOMAIN-SUFFIX, bdimg.com
+
+# 统计 / 崩溃上报 / 腾讯云
+DOMAIN, bugly.qq.com
+DOMAIN-SUFFIX, umeng.com
+DOMAIN-SUFFIX, umeng.co
+DOMAIN-SUFFIX, umtrack.com
+DOMAIN-SUFFIX, sensorsdata.cn
+DOMAIN-SUFFIX, qcloud.com
+DOMAIN-SUFFIX, myqcloud.com
+DOMAIN-SUFFIX, tencent-cloud.com
+
+# 系统网络探测 / APNs / 证书校验
+DOMAIN, captive.apple.com
+DOMAIN-SUFFIX, apple.com
+DOMAIN-SUFFIX, digicert.com
+DOMAIN-SUFFIX, globalsign.com
+DOMAIN-SUFFIX, sectigo.com
+DOMAIN-SUFFIX, entrust.net
