@@ -1,0 +1,12 @@
+#!name=兴业银行与兴业生活网络旁路
+#!desc=让兴业银行、兴业生活及核心支付域名绕过 Loon TUN/HTTP Proxy，并使用真实 DNS；用于减少 Fake-IP 与网络侧代理检测。
+#!author=Dream230-1
+#!tag=银行,直连,防代理检测
+#!system=iOS
+#!homepage=https://github.com/Dream230-1/loon
+#!date=2026-07-15 20:35:00
+
+[General]
+bypass-tun = cib.com.cn,*.cib.com.cn,cib.cn,*.cib.cn,95561.com.cn,*.95561.com.cn,static-ucp.com.cn,*.static-ucp.com.cn,cibhk.com,*.cibhk.com,ksdao.com,*.ksdao.com,95516.com,*.95516.com,95516.net,*.95516.net,unionpay.com,*.unionpay.com,unionpayintl.com,*.unionpayintl.com,chinaunionpay.com,*.chinaunionpay.com,chinaums.com,*.chinaums.com,chinaums.com.cn,*.chinaums.com.cn,ums86.com,*.ums86.com
+skip-proxy = cib.com.cn,*.cib.com.cn,cib.cn,*.cib.cn,95561.com.cn,*.95561.com.cn,static-ucp.com.cn,*.static-ucp.com.cn,cibhk.com,*.cibhk.com,ksdao.com,*.ksdao.com,95516.com,*.95516.com,95516.net,*.95516.net,unionpay.com,*.unionpay.com,unionpayintl.com,*.unionpayintl.com,chinaunionpay.com,*.chinaunionpay.com,chinaums.com,*.chinaums.com,chinaums.com.cn,*.chinaums.com.cn,ums86.com,*.ums86.com
+real-ip = cib.com.cn,*.cib.com.cn,cib.cn,*.cib.cn,95561.com.cn,*.95561.com.cn,static-ucp.com.cn,*.static-ucp.com.cn,cibhk.com,*.cibhk.com,ksdao.com,*.ksdao.com,95516.com,*.95516.com,95516.net,*.95516.net,unionpay.com,*.unionpay.com,unionpayintl.com,*.unionpayintl.com,chinaunionpay.com,*.chinaunionpay.com,chinaums.com,*.chinaums.com,chinaums.com.cn,*.chinaums.com.cn,ums86.com,*.ums86.com
