@@ -1,0 +1,12 @@
+#!name=宁德今日油价
+#!desc=Surge 油价信息面板。默认福建(35)/宁德；基于中石化公开油价数据，显示 92#/95#/98#/0#柴油、较上次涨跌、下轮调价时间；临近调价时尝试显示预测。
+#!category=生活
+#!system=ios
+#!arguments=PROVINCE:35,CITY:宁德,TITLE:宁德今日油价,UPDATE_INTERVAL:3600,PREDICT_DAYS:3,ICON:fuelpump.circle.fill,COLOR:#F5A623,SCRIPT_PATH:https://raw.githubusercontent.com/Dream230-1/loon/main/Surge/Widget/GasPrice_Ningde.js
+#!arguments-desc=PROVINCE：省份代码，福建为35\nCITY：城市，默认宁德\nTITLE：面板标题\nUPDATE_INTERVAL：面板刷新间隔（秒）\nPREDICT_DAYS：距调价多少天内抓取下轮预测\nICON/COLOR：SF Symbol 图标与颜色\nSCRIPT_PATH：脚本地址；默认使用本仓库 Raw URL，可自行替换
+
+[Script]
+宁德今日油价 = type=generic,timeout=25,script-path={{{SCRIPT_PATH}}},argument=province={{{PROVINCE}}}&city={{{CITY}}}&title={{{TITLE}}}&predict_days={{{PREDICT_DAYS}}}&icon={{{ICON}}}&color={{{COLOR}}}
+
+[Panel]
+宁德今日油价 = script-name=宁德今日油价,update-interval={{{UPDATE_INTERVAL}}}
