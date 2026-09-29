@@ -2,7 +2,7 @@
 #!desc=Egern「网络诊断雷达」Surge 兼容版。使用三个 Information Panel 分别呈现网络概览、流媒体解锁与 AI 解锁；POLICY 优先级最高，LMT/AI 在 POLICY 留空时分别指定检测策略。YS=1 对 IP 打码；XY 可填写 VLESS/Trojan/HY2/AnyTLS 等协议名。
 #!category=网络
 #!system=ios
-#!arguments=POLICY:,LMT:,AI:,YS:0,XY:,CACHE_MINUTES:2,UPDATE_INTERVAL:900
+#!arguments=POLICY,LMT,AI,YS:0,XY,CACHE_MINUTES:2,UPDATE_INTERVAL:900
 #!arguments-desc=所有参数均可留空使用默认规则。三个面板共享短时缓存，默认 15 分钟刷新、2 分钟共享缓存。
 
 [Script]
