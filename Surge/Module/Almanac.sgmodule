@@ -2,7 +2,7 @@
 #!desc=Egern「岁时黄历」Surge 兼容版。保留农历、干支生肖、时辰、星座/周次、教学周、宜忌、冲煞、运势及未来节气；时间基准固定 UTC+8。
 #!category=生活
 #!system=ios
-#!arguments=ASTRO_OR_WEEK:星座,SHOW_TEACHING_WEEK:true,TEACHING_WEEK_START:,UPDATE_INTERVAL:3600
+#!arguments=ASTRO_OR_WEEK:星座,SHOW_TEACHING_WEEK:true,TEACHING_WEEK_START,UPDATE_INTERVAL:3600
 #!arguments-desc=ASTRO_OR_WEEK 可填“星座”或“周次”；TEACHING_WEEK_START 按 YYYY-MM-DD 填写开学日期。
 
 [Script]
