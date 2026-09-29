@@ -1,0 +1,12 @@
+#!name=NetSpeed 测速
+#!desc=Egern NetSpeed Widget 的 Surge 兼容版。使用 Cloudflare 下载样本测算 Mbps/MB/s，并以文本速度条、动态 SF Symbol 和状态色尽量复原原组件层级。点击面板手动刷新会重新测速。
+#!category=网络
+#!system=ios
+#!arguments=MB:3,POLICY:,MIN_RETEST_SECONDS:60,UPDATE_INTERVAL:1800
+#!arguments-desc=MB 为单次测速下载量（1-20 MB）；POLICY 留空走默认规则。自动刷新默认 30 分钟，避免频繁消耗流量。
+
+[Script]
+NetSpeed = type=generic,timeout=40,engine=webview,script-path=https://raw.githubusercontent.com/Dream230-1/loon/main/Surge/Widget/NetSpeed_Surge.js,argument="MB={{{MB}}}&POLICY={{{POLICY}}}&MIN_RETEST_SECONDS={{{MIN_RETEST_SECONDS}}}"
+
+[Panel]
+NetSpeed = script-name=NetSpeed,update-interval={{{UPDATE_INTERVAL}}}
